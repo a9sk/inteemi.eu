@@ -1,5 +1,5 @@
-#+MACRO: parking-header (eval (let ((kw (org-collect-keywords '("TITLE")))) (format "@@html:<h1>%s</h1><p class=\"meta\">last modified %s · <a href=\"https://github.com/a9sk/inteemi.eu/blob/main/parking/index.org\">source</a> · <a href=\"https://github.com/a9sk\">github</a></p><hr />@@" (or (cadr (assoc "TITLE" kw)) "") (format-time-string "%d-%m-%Y"))))
+#+MACRO: parking-header (eval (let ((kw (org-collect-keywords '("TITLE")))) (format "@@html:<h1>%s</h1><p class=\"meta\">last modified %s · <a href=\"https://github.com/a9sk/inteemi.eu/blob/main/parking/index.org?plain=1\">source</a> · <a href=\"https://github.com/a9sk\">github</a></p><hr />@@" (or (cadr (assoc "TITLE" kw)) "") (format-time-string "%d-%m-%Y"))))
 
-#+MACRO: parking-header-no-title (eval (format "@@html:<p class=\"meta\">last modified %s · <a href=\"./xxx-base.org\">org source</a> · <a href=\"https://github.com/a9sk\">github</a></p><hr />@@" (format-time-string "%d-%m-%Y")))
+#+MACRO: parking-header-no-title (eval (format "@@html:<p class=\"meta\">last modified %s · <a href=\"https://github.com/a9sk/inteemi.eu/blob/main/parking/index.org?plain=1\">org source</a> · <a href=\"https://github.com/a9sk\">github</a></p><hr />@@" (format-time-string "%d-%m-%Y")))
 
 #+MACRO: parking-footer (eval (format "@@html:<hr /><p class=\"meta\">end of document · generated %s · <a href=\"#\">back to top ↑</a> · proudly hosted on <a href=\"https://statichost.eu\">statichost.eu</a></p>@@" (format-time-string "%d-%m-%Y")))
